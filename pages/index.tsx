@@ -15,7 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>왕ㅋ굳ㅋ</h1>
+          <a href="http://localhost:3000/popup/partners/loreal/callback">
+              test link
+          </a>
       </main>
     </>
   )
