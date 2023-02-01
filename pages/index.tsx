@@ -15,8 +15,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-          <a href="http://localhost:3000/popup/partners/loreal/callback">
-              test link
+          <p>
+              mybeautybox
+              가입이 완료되었습니다.
+          </p>
+          <a href="https://local34.dev.kurly.com/popup/partners/loreal/callback">
+            확인
           </a>
       </main>
     </>
