@@ -19,10 +19,10 @@ export default function Home() {
               mybeautybox
               가입이 완료되었습니다.
           </p>
-          <a href="https://localhost:3000/popup/partners/loreal/callback?statue=success">
+          <a href="https://www-qa3.stg.kurly.com/popup/partners/loreal/callback?statue=success">
             확인(성공)
           </a>
-          <a href="https://localhost:3000/popup/partners/loreal/callback">
+          <a href="https://www-qa3.stg.kurly.com/popup/partners/loreal/callback">
             확인(실패)
           </a>
       </main>
