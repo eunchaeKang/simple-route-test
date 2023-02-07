@@ -10,6 +10,7 @@ export default function Home() {
         window.open("http://localhost:3000/popup/partners/loreal/callback?status=success");
     }
     const winopenself = () => {
+        alert('asdasd');
         window.open("http://localhost:3000/popup/partners/loreal/callback?status=success", "_self")
     }
   return (
