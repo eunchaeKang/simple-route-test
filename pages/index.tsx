@@ -6,6 +6,12 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    const winopen = () => {
+        window.open("http://localhost:3000/popup/partners/loreal/callback?status=success");
+    }
+    const winopenself = () => {
+        window.open("http://localhost:3000/popup/partners/loreal/callback?status=success", "_self")
+    }
   return (
     <>
       <Head>
@@ -28,6 +34,12 @@ export default function Home() {
           <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_blank" rel="noreferrer">
               확인(성공, _black)
           </a>
+          <button type="button" onClick={winopen}>
+              확인(성공, window.open)
+          </button>
+          <button type="button" onClick={winopenself}>
+              확인(성공, window.open, _self)
+          </button>
           <a href="http://localhost:3000/popup/partners/loreal/callback">
             확인(실패)
           </a>
