@@ -25,7 +25,7 @@ export default function Home() {
           <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_self">
               확인(성공, _self)
           </a>
-          <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_blank">
+          <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_blank" rel="noreferrer">
               확인(성공, _black)
           </a>
           <a href="http://localhost:3000/popup/partners/loreal/callback">
