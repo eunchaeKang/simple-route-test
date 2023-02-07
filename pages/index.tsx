@@ -7,11 +7,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     const winopen = () => {
-        window.open("http://localhost:3000/popup/partners/loreal/callback?status=success");
+        window.location.replace('http://localhost:3000/popup/partners/loreal/callback?status=success');
     }
     const winopenself = () => {
-        alert('asdasd');
-        window.open("http://localhost:3000/popup/partners/loreal/callback?status=success", "_self")
+        window.location.href="http://localhost:3000/popup/partners/loreal/callback?status=success";
     }
   return (
     <>
@@ -36,10 +35,10 @@ export default function Home() {
               확인(성공, _black)
           </a>
           <button type="button" onClick={winopen}>
-              확인(성공, window.open)
+              확인(성공, location.replace)
           </button>
           <button type="button" onClick={winopenself}>
-              확인(성공, window.open, _self)
+              확인(성공, location.href)
           </button>
           <a href="http://localhost:3000/popup/partners/loreal/callback">
             확인(실패)
