@@ -34,6 +34,12 @@ export default function Home() {
           <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_blank" rel="noreferrer">
               확인(성공, _black)
           </a>
+          <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_parent">
+              확인(성공, _parent)
+          </a>
+          <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_top">
+              확인(성공, _top)
+          </a>
           <button type="button" onClick={winopen}>
               확인(성공, location.replace)
           </button>
