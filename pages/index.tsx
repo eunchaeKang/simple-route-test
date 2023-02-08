@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     const test = () => {
-        window.location.href="http://www-qa4.stg.kurly.com/popup/partners/loreal/callback?status=success"
+        window.location.href="http://localhost:3000/popup/partners/loreal/callback?status=success"
     }
 
     const test2 = () => {
-        window.open("http://www-qa4.stg.kurly.com/popup/partners/loreal/callback?status=success")
+        window.open("http://localhost:3000/popup/partners/loreal/callback?status=success")
     }
   return (
     <>
