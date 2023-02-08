@@ -6,6 +6,9 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    const test = () => {
+        window.location.href="http://localhost:3000/popup/partners/loreal/callback?status=success"
+    }
   return (
     <>
       <Head>
@@ -26,6 +29,9 @@ export default function Home() {
                   <button type="submit">버튼 테스트</button>
               </div>
           </form>
+
+
+         <button type="button" onClick={test}>버튼 테스트2</button>
           <a href="http://localhost:3000/popup/partners/loreal/callback?status=success">
             확인(성공)
           </a>
