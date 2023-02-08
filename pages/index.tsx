@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     const test = () => {
-        window.location.href="http://www.kurly.com"
+        window.location.href="http://www-qa4.kurly.com/popup/partners/loreal/callback?status=success"
     }
   return (
     <>
