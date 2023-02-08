@@ -9,6 +9,10 @@ export default function Home() {
     const test = () => {
         window.location.href="http://localhost:3000/popup/partners/loreal/callback?status=success"
     }
+
+    const test2 = () => {
+        window.open("http://localhost:3000/popup/partners/loreal/callback?status=success")
+    }
   return (
     <>
       <Head>
@@ -24,14 +28,8 @@ export default function Home() {
               가입이 완료되었습니다.
           </p>
 
-          <form action="http://local34.dev.kurly.com/popup/partners/loreal/callback?status=success" method="post">
-              <div className="button">
-                  <button type="submit">버튼 테스트</button>
-              </div>
-          </form>
-
-
-         <button type="button" onClick={test}>버튼 테스트2</button>
+         <button type="button" onClick={test}>버튼 테스트1</button>
+          <button type="button" onClick={test2}>버튼 테스트2</button>
           <a href="http://local34.dev.kurly.com/popup/partners/loreal/callback?status=success">
             확인(성공)
           </a>
