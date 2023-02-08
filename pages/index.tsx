@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     const test = () => {
-        window.location.href="http://localhost:3000/popup/partners/loreal/callback?status=success"
+        window.location.href="http://local34.dev.kurly.com/popup/partners/loreal/callback?status=success"
     }
   return (
     <>
@@ -24,7 +24,7 @@ export default function Home() {
               가입이 완료되었습니다.
           </p>
 
-          <form action="http://localhost:3000/popup/partners/loreal/callback?status=success" method="post">
+          <form action="http://local34.dev.kurly.com/popup/partners/loreal/callback?status=success" method="post">
               <div className="button">
                   <button type="submit">버튼 테스트</button>
               </div>
@@ -32,22 +32,22 @@ export default function Home() {
 
 
          <button type="button" onClick={test}>버튼 테스트2</button>
-          <a href="http://localhost:3000/popup/partners/loreal/callback?status=success">
+          <a href="http://local34.dev.kurly.com/popup/partners/loreal/callback?status=success">
             확인(성공)
           </a>
-          <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_self">
+          <a href="http://local34.dev.kurly.com/popup/partners/loreal/callback?status=success" target="_self">
               확인(성공, _self)
           </a>
-          <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_blank" rel="noreferrer">
+          <a href="http://local34.dev.kurly.com/popup/partners/loreal/callback?status=success" target="_blank" rel="noreferrer">
               확인(성공, _black)
           </a>
-          <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_parent">
+          <a href="http://local34.dev.kurly.com/popup/partners/loreal/callback?status=success" target="_parent">
               확인(성공, _parent)
           </a>
-          <a href="http://localhost:3000/popup/partners/loreal/callback?status=success" target="_top">
+          <a href="http://local34.dev.kurly.com/popup/partners/loreal/callback?status=success" target="_top">
               확인(성공, _top)
           </a>
-          <a href="http://localhost:3000/popup/partners/loreal/callback">
+          <a href="http://local34.dev.kurly.com/popup/partners/loreal/callback">
             확인(실패)
           </a>
       </main>
