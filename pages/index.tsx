@@ -6,15 +6,6 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-    const test = () => {
-        return {
-            redirect: {
-                destination: 'http://localhost:3000/popup/partners/loreal/callback?status=success',
-                permanent: false,
-            },
-        };
-    }
-
   return (
     <>
       <Head>
@@ -29,7 +20,12 @@ export default function Home() {
               mybeautybox
               가입이 완료되었습니다.
           </p>
-          <button type="button" onClick={test}>버튼 테스트</button>
+
+          <form action="http://localhost:3000/popup/partners/loreal/callback?status=success" method="post">
+              <div className="button">
+                  <button type="submit">버튼 테스트</button>
+              </div>
+          </form>
           <a href="http://localhost:3000/popup/partners/loreal/callback?status=success">
             확인(성공)
           </a>
