@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     const test = () => {
-        window.location.href="https://local34.dev.kurly.com/popup/partners/loreal/callback"
+        window.location.href="https://www-qa1.stg.kurly.com/popup/partners/loreal/callback?status=success"
     }
     const test2 = () => {
         window.location.href="https://www-qa1.stg.kurly.com/popup/partners/loreal/callback"
@@ -26,8 +26,8 @@ export default function Home() {
               외부망 페이지 테스트
           </p>
 
-         <button type="button" onClick={test}>return url 로컬테스트</button>
-          <button type="button" onClick={test2}>return url stg 테스트</button>
+         <button type="button" onClick={test}>return url 테스트(기존 창 닫힘)</button>
+          <button type="button" onClick={test2}>return url 테스트(기존 창 유지)</button>
       </main>
     </>
   )
