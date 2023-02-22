@@ -59,6 +59,7 @@ export default function Home() {
           <a href="https://www.naver.com" target="_parent">a _parent</a>
           <a href="https://www.naver.com" target="_self">a _self</a>
           <a href="https://www.naver.com" target="_top">a _top</a>
+          <a href="https://www.naver.com">a</a>
 
 
          <button type="button" onClick={test}>window.location.href</button>
