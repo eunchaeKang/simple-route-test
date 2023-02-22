@@ -2,12 +2,44 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import {useRouter} from "next/router";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    const {push} = useRouter();
+
     const test = () => {
-        window.location.href="https://www-qa1.stg.kurly.com/popup/partners/loreal/callback"
+        window.location.href="https://www.naver.com"
+    }
+
+    const test2 = () => {
+        window.open("https://www.naver.com", '_blank', 'noopener,noreferrer');
+    }
+
+    const test3 = () => {
+        window.location.reload();
+    }
+
+    const test4 = () => {
+        window.location.assign("https://www.naver.com");
+    }
+
+    const test5 = () => {
+        window.location.replace("https://www.naver.com");
+    }
+
+    const test6 = () => {
+        push("https://www.naver.com");
+    }
+
+    const test7 = () => {
+        return {
+            redirect: {
+                destination: 'https://www.naver.com',
+                permanent: false,
+            },
+        };
     }
   return (
     <>
@@ -23,7 +55,20 @@ export default function Home() {
               외부망 페이지 테스트
           </p>
 
-         <button type="button" onClick={test}>return url 테스트</button>
+          <a href="https://www.naver.com" target="_blank" rel="noreferrer">a _blank</a>
+          <a href="https://www.naver.com" target="_parent">a _parent</a>
+          <a href="https://www.naver.com" target="_self">a _self</a>
+          <a href="https://www.naver.com" target="_top">a _top</a>
+
+
+         <button type="button" onClick={test}>window.location.href</button>
+          <button type="button" onClick={test2}>window.open</button>
+          <button type="button" onClick={test3}>window.location.reload</button>
+          <button type="button" onClick={test4}>window.location.assign</button>
+          <button type="button" onClick={test5}>window.location.replace</button>
+          <button type="button" onClick={test6}>route.push</button>
+
+          <button type="button" onClick={test7}>redirect</button>
       </main>
     </>
   )
