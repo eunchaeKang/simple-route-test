@@ -10,11 +10,11 @@ export default function Home() {
     const {push} = useRouter();
 
     const test = () => {
-        window.location.href="https://www.kurly.com/main"
+        window.location.href="https://www.naver.com/"
     }
 
     const test2 = () => {
-        window.open("https://www.kurly.com/main", '_blank', 'noopener,noreferrer');
+        window.open("https://www.naver.com/", '_blank', 'noopener,noreferrer');
     }
 
     const test3 = () => {
@@ -22,21 +22,21 @@ export default function Home() {
     }
 
     const test4 = () => {
-        window.location.assign("https://www.kurly.com/main");
+        window.location.assign("https://www.naver.com/");
     }
 
     const test5 = () => {
-        window.location.replace("https://www.kurly.com/main");
+        window.location.replace("https://www.naver.com/");
     }
 
     const test6 = () => {
-        push("https://www.kurly.com/main");
+        push("https://www.naver.com/");
     }
 
     const test7 = () => {
         return {
             redirect: {
-                destination: 'https://www.kurly.com/main',
+                destination: 'https://www.naver.com/',
                 permanent: false,
             },
         };
@@ -55,11 +55,11 @@ export default function Home() {
               외부망 페이지 테스트
           </p>
 
-          <a href="https://www.kurly.com/main" target="_blank" rel="noreferrer">a _blank</a>
-          <a href="https://www.kurly.com/main" target="_parent">a _parent</a>
-          <a href="https://www.kurly.com/main" target="_self">a _self</a>
-          <a href="https://www.kurly.com/main" target="_top">a _top</a>
-          <a href="https://www.kurly.com/main">a</a>
+          <a href="https://www.naver.com/" target="_blank" rel="noreferrer">a _blank</a>
+          <a href="https://www.naver.com/" target="_parent">a _parent</a>
+          <a href="https://www.naver.com/" target="_self">a _self</a>
+          <a href="https://www.naver.com/" target="_top">a _top</a>
+          <a href="https://www.naver.com/">a</a>
 
 
          <button type="button" onClick={test}>window.location.href</button>
