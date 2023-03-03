@@ -10,11 +10,11 @@ export default function Home() {
     const {push} = useRouter();
 
     const test = () => {
-        window.location.href="https://www.naver.com/"
+        window.location.href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain"
     }
 
     const test2 = () => {
-        window.open("https://www.naver.com/", '_blank', 'noopener,noreferrer');
+        window.open("https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain", '_blank', 'noopener,noreferrer');
     }
 
     const test3 = () => {
@@ -22,21 +22,21 @@ export default function Home() {
     }
 
     const test4 = () => {
-        window.location.assign("https://www.naver.com/");
+        window.location.assign("https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain");
     }
 
     const test5 = () => {
-        window.location.replace("https://www.naver.com/");
+        window.location.replace("https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain");
     }
 
     const test6 = () => {
-        push("https://www.naver.com/");
+        push("https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain");
     }
 
     const test7 = () => {
         return {
             redirect: {
-                destination: 'https://www.naver.com/',
+                destination: 'https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain',
                 permanent: false,
             },
         };
@@ -55,11 +55,11 @@ export default function Home() {
               외부망 페이지 테스트
           </p>
 
-          <a href="https://www.naver.com/" target="_blank" rel="noreferrer">a _blank</a>
-          <a href="https://www.naver.com/" target="_parent">a _parent</a>
-          <a href="https://www.naver.com/" target="_self">a _self</a>
-          <a href="https://www.naver.com/" target="_top">a _top</a>
-          <a href="https://www.naver.com/">a</a>
+          <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain" target="_blank" rel="noreferrer">a _blank</a>
+          <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain" target="_parent">a _parent</a>
+          <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain" target="_self">a _self</a>
+          <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain" target="_top">a _top</a>
+          <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain">a</a>
 
 
          <button type="button" onClick={test}>window.location.href</button>
