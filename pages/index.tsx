@@ -51,24 +51,19 @@ export default function Home() {
 
       </Head>
       <main className={styles.main}>
-          <p>
-              외부망 페이지 테스트
-          </p>
+          <p>외부망 링크처리 테스트</p>
 
           <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain" target="_blank" rel="noreferrer">a _blank</a>
           <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain" target="_parent">a _parent</a>
           <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain" target="_self">a _self</a>
           <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain" target="_top">a _top</a>
           <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/service.cb?m=authMobileMain">a</a>
-
-
          <button type="button" onClick={test}>window.location.href</button>
           <button type="button" onClick={test2}>window.open</button>
           <button type="button" onClick={test3}>window.location.reload</button>
           <button type="button" onClick={test4}>window.location.assign</button>
           <button type="button" onClick={test5}>window.location.replace</button>
           <button type="button" onClick={test6}>route.push</button>
-
           <button type="button" onClick={test7}>redirect</button>
       </main>
     </>
