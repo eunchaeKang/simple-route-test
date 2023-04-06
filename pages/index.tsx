@@ -41,6 +41,14 @@ export default function Home() {
             },
         };
     }
+
+
+    const test8 = () => {
+        push("kurly://");
+    }
+    const test9 = () => {
+        window.open("kurly://");
+    }
   return (
     <>
       <Head>
@@ -65,6 +73,12 @@ export default function Home() {
           <button type="button" onClick={test5}>window.location.replace</button>
           <button type="button" onClick={test6}>route.push</button>
           <button type="button" onClick={test7}>redirect</button>
+
+
+          <button type="button" onClick={test8}>효진님 여기예요 push</button>
+          <button type="button" onClick={test9}>효진님 여기예요 window.open</button>
+          <a href="kurly://">효진님 여기예요 a</a>
+          이게맞나,,,,,,,,,,
       </main>
     </>
   )
