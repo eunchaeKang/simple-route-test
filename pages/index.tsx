@@ -52,6 +52,14 @@ export default function Home() {
     const test10 = () => {
         window.location.href="kurly://"
     }
+    const test11 = () => {
+        return {
+            redirect: {
+                destination: 'kurly://',
+                permanent: false,
+            },
+        };
+    }
   return (
     <>
       <Head>
@@ -82,6 +90,7 @@ export default function Home() {
           <button type="button" onClick={test9}>효진님 여기예요 window.open</button>
           <button type="button" onClick={test10}>효진님 여기예요 window.location.href</button>
           <a href="kurly://">효진님 여기예요 a</a>
+          <button type="button" onClick={test11}>효진님 여기예요 redirect</button>
           이게맞나,,,,,,,,,,
       </main>
     </>
